@@ -1,0 +1,22 @@
+{
+  "name": "applitools-hackathon-2020",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admah/applitools-hackathon-2020"
+  },
+  "author": "Adam Murray",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^4.8.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:open:mobile": "cypress open --config viewportWidth=375,viewportHeight=667",
+    "cypress:run": "cypress run",
+    "cypress:run:mobile": "cypress run --config viewportWidth=375,viewportHeight=667",
+    "test": "yarn cypress:open",
+    "test:headless": "yarn cypress:run"
+  }
+}
